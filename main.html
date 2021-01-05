@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotstar</title>
+
+    <!-- linked to css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+   
+    <!-- linked to javascript -->
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link rel="shortuct icon" href="disney.png">
+    
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script>
+        // function myFunction() {
+        //   var x = document.getElementById("menu");
+
+        //   if (x.style.display === "list-item") {
+        //     x.style.display = "none";
+        //   } else {
+        //     x.style.display = "list-item";
+        //   }
+        // }
+        function myFunction() {
+            var x = document.getElementById("menu2");
+            var y= document.getElementById("menu");
+            if(window.innerWidth <= 900){
+                var current=x;
+                y.style.display = "none";
+            }
+            else{
+                var current=y;
+                x.style.display = "none";
+            }
+          
+          if (current.style.display === "list-item") {
+            current.style.display = "none";
+          } else {
+            current.style.display = "list-item";
+          }
+        }
+        </script>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <nav style="display: flex; align-items: flex-start;">
+              
+        <ul class="menu">
+            <li>
+                <div>
+                    <a href="javascript:void(0);" class="icon"  onclick="myFunction()">
+                        <i class="fa fa-bars" style="color:white; display: flex; align-items: center; font-size: 1.5rem;"></i>
+                    </a>
+                    <ul id="menu" style="display: none;">
+                        <li><a href="#">Channel</a></li>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">Genres</a></li>
+                        
+                    </ul> 
+                    <ul id="menu2" style="display: none;">
+                        <li><a href="#">Channel</a></li>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">Genres</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </div>
+            </li>                                 
+
+            <li><a href="#"><img class="brand-logo" src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt="Disney+&nbsp;Hotstar"></a></li>
+            <li id="group"><a href="#">TV</a></li>
+            <li id="group"><a href="#">Movies</a></li>
+            <li id="group"><a href="#">Sports</a></li>
+            <li id="group"><a href="#">News</a></li>
+            <li id="group"><a href="#">Premium</a></li>
+            <li id="group"><a href="#">Disney+</a></li>
+            <li id="group"><a href="#"><img src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg"></a></li>
+        </ul>
+
+        <div class="search" >
+            <input type="text" placeholder="Search"/>
+                <!--search-icon----------->
+                <i class="fas fa-search" style="margin-right:8px;"></i>
+       
+            
+            <span id="Subscribe"><button type="button">SUBSCRIBE</button></span>
+        
+        </div>
+    </nav>       
+
+    <!-- Showcase Section -->
+    
+    <div class="container">
+        <img  src="images\criminal justice.jpg" alt="Nature" style="width:100%; padding:45px; border: black; position: relative;">
+        <div class="text-block">
+            <h1>Criminal Justice</h1>
+            <p>Criminal Justice is an Indian crime thriller web series based on Criminal
+            Justice by Peter Moffat, adapted for India by Shridhar Raghavan streaming 
+            on Hotstar on its new label Hotstar Specials on 5 April 2019.</p>
+            <img src="images\play-button.png">
+            <h3>Watch Episode 1 </h3>
+            <p>S1 E1. 24 Dec 2020 </p>
+            <img src="images\plus.png">
+            <img src="images\share.png">
+              
+        </div>       
+    </div>
+    
+        
+<!-- Trailers & Extras -->
+<div class="trailer ">
+    <div class="T-text">
+    <h2>Trailers & Extras</h2>
+    </div>
+    <img src="images\criminal justice.jpg">
+    
+</div>
+
+
+
+<!-- Similar Movies & Shows -->
+
+<section id="latest">
+    <h1 class="latest_heading">Similar Movies & Shows</h1>
+
+    <!-- slider -->
+    <ul id="autoWidth2" class="cs-hidden cards-animation">
+
+        <li class="item-a">
+            <a href="#">
+            <div class="latest-box">
+                
+                <!-- image -->
+                <div class="latest-b-img">
+                    <img src="images\Tanaji.jpg">
+                </div>
+    
+                <!-- text -->
+                <div class="latest-b-text">
+                    <strong>Tanhaji</strong>
+                    <p>Action,Hindi,Marathi,2020</p>
+                </div>
+            </div>
+            </a>
+        </li>
+        
+        <li class="item-b" >
+            <a href="#">
+            <div class="latest-box">
+
+                <!-- image -->
+                <div class="latest-b-img">
+                    <img src="images\Baghi 3.jpg">
+                </div>
+    
+                <!-- text -->
+                <div class="latest-b-text">
+                    <strong>Baaghi 3</strong>
+                    <p>Action,Hindi,2020</p>
+                </div>
+            </div>
+            </a>
+        </li>
+
+        <li class="item-c">
+            <a href="#">
+            <div class="latest-box">
+
+                <!-- image -->
+                <div class="latest-b-img">
+                    <img src="images\khuda hafiz.jpg">
+                </div>
+    
+                <!-- text -->
+                <div class="latest-b-text">
+                    <strong>Khuda Hafiz</strong>
+                    <p>Action,Hindi,Romance,2020</p>
+                </div>
+            </div>
+            </a>
+        </li>
+
+        <li class="item-d">
+            <a href="#">
+            <div class="latest-box">
+                
+                <!-- image -->
+                <div class="latest-b-img">
+                    <img src="images\dil bechara.jpg">
+                </div>
+    
+                <!-- text -->
+                <div class="latest-b-text">
+                    <strong>Dil Bechara</strong>
+                    <p>Romance,Drama,Hindi,2020</p>
+                </div>
+            </div>
+            </a>
+        </li>
+
+        <li class="item-e">
+            <a href="#">   
+            <div class="latest-box">
+                
+                <!-- image -->
+                <div class="latest-b-img">
+                    <img src="images\lootcase.jpg">
+                </div>
+    
+                <!-- text -->
+                <div class="latest-b-text">
+                    <strong>Lootcase</strong>
+                    <p>Comedy,Hindi,2020</p>
+                </div>
+            </div>
+            </a>
+        </li>
+
+        <li class="item-f">
+            <a href="#">
+            <div class="latest-box">
+
+                <!-- image -->
+                <div class="latest-b-img">
+                    <img src="images\sadak 2.jpeg">
+                </div>
+    
+                <!-- text -->
+                <div class="latest-b-text">
+                    <strong>Sadak 2</strong>
+                    <p>Drama,Hindi,2020</p>
+                </div>
+            </div>
+            </a>
+        </li>
+
+        <li class="item-g">
+            <a href="#">
+            <div class="latest-box">
+
+                <!-- image -->
+                <div class="latest-b-img">
+                    <img src="images\laxmi.jpg">
+                </div>
+    
+                <!-- text -->
+                <div class="latest-b-text">
+                    <strong>Laxamii</strong>
+                    <p>Horrer,Comedy,Hindi,2020</p>
+                </div>
+            </div>
+            </a>
+        </li>
+        
+      </ul>
+</section>
+
+
+
+
+
+
+<!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="first_footer">
+            <ul id="foot">
+            <li><a href="#">About Disney+ Hotstar</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy policy(New)</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Carrers</a></li>
+            </ul>  
+            <p class="copyright">© 2021 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p>          
+        </div>
+
+        <div>
+            <p>Connect with us</p>
+            <div class="second_footer">
+                <img src="images\facebook.png">
+                <img src="images\twitter.png">
+            </div>
+            
+        </div>
+
+        <div>
+            <p>Disney+ Hotstar App</p>
+            <div class="third_footer">
+                <img src="images\google-play.png">
+                <img src="images\app-store.png">
+            </div>
+            
+        </div>
+    </footer>
+
+
+
+
+    <!-- slider script -->
+
+    <script>
+          $(document).ready(function() {
+        $('#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+        } 
+    });  
+  });
+    </script>
+</body> 
+
+
+
+</html> 
